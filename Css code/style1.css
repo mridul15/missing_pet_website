@@ -1,0 +1,32 @@
+.image1
+{
+  background-color: burlywood;
+  text-align: center;
+  padding:20px;
+  font-size: 50px;
+}
+.image2
+{
+  font-size: 20px;
+  font-weight: bolder;
+  align-content: center;
+  margin:5px 20px 15px 5px;
+  padding:10px;
+  background-color:powderblue;
+ }
+ .image3
+ {
+  padding:5px;
+ }
+ .image4
+ {
+    background-color: blueviolet;
+ }
+ input[type="submit"]
+ {
+    height:50px;
+    width:100px;
+    padding:5px;
+    font-weight:bolder;
+    background-color:bisque;
+ }

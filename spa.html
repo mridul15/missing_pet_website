@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Appointment
+        </title>
+        <script>
+            function f()
+            {
+                var empt = document.form1.text1.value;
+if (empt == "")
+{
+alert("Please input a Value");
+return false;
+}
+else 
+{
+alert('Code has accepted : you can try another');
+return true; 
+}
+            }
+        </script>
+    </head>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+             @media screen and (width:600px)
+        {
+        body{
+            color:red;
+            }
+        }
+        body{
+            background-color:burlywood;
+            text-indent:10px;
+            text-align: left;
+            padding:10px;
+            margin:15px 30px;
+            border-color:black;
+        }
+        header{
+          color:black;
+            background-color:lightcoral;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:80px;
+            padding:50px;
+            font-weight: bolder;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                   }
+        .container
+        {
+            margin:5px 20px 50px 5px;
+            background-color:aquamarine;
+            border-radius:4px;
+        }
+        form{
+            align-content: center;
+        }
+        .vapas
+        {
+            background-color:rgb(241, 241, 237);
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+   @media only screen and ( min-width:600px)
+   {
+       div.container
+       {
+           background-color:bisque;
+       }
+   }
+    </style>
+<body >
+    <div class="container"><h1><fieldset><header>Book An Appointment</header></fieldset></h1>
+      <hr>  <form><b>
+            <p>Name:<input type="text" name="name" required></p>
+            <p>Contact no.<input type="text" name="number" required></p>
+            <label>Address:</label> <p><textarea id="address" name="address" rows="10px" cols="100px" required></textarea></p>
+            <p>Email:<input type="email" name="Email"></p> 
+           <hr> <p>Select Pet
+               <select required>
+               <option value=""></option>
+               <option value="Dog">Dog</option>
+               <option value="Cat">Cat</option>
+               <option value="Other">Other</option>
+            </select></p>
+            <hr> <p>Select Service
+              <select required>
+              <option value=""></option>
+              <option value="Regular Bath">Regular Bath</option>
+              <option value="Basic Groooming">Basic Groooming</option>
+              <option value="Tick and flee bath">Tick and flee bath</option>
+              <option value="Tick and flee treatment">Tick and flee treatment</option>
+              <option value="Spa">Spa</option>
+           </select></p>
+           <p>Date and Time<input type="datetime-local" name="date and Time"></p>          
+            </div>
+         </b> 
+        </form>
+        
+        <div>  <a class="vapas" href="index.html">Home</a></div>
+    </body>
+    
+    </html>

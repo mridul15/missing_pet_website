@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>File Upload</title>
+   </head>
+   <link rel="stylesheet" href="css/style2.css">
+   <fieldset><header class="image5">Pet Found.</header></fieldset>
+   <form  method="POST" name="google-sheet"><div class="image6"></div>
+      <p>Upload Photo:<input type = "file" name = "upload" accept = "image"></p><hr>
+      <p>Last Location:<input type="text" id="location" name="location" required></p> <hr>
+         <!-- </form>    -->
+   <fieldset><header class="image5">Informant Details</header></fieldset>
+  <body class="image8">
+      <div class="image6"></div> 
+      <div class="image7">
+      <p>Name:<input type="text" id="name "name="name" required></p><hr>
+      <p>Contact no.<input type="text"  id="contact no."name="number" required></p> <hr>
+      <label>Address</label><p><textarea id="address"  name="address" rows="10px" cols="100px" required></textarea></p> <hr>
+      <p>E-mail.<input type="email"  name="email" required></p> <hr>
+      <p><input type="submit" name="submit" value="submit"></p> <hr>
+      </div>
+    </form>
+    <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyTkzLKbjh-NNNpJ1n1GXHwUOeiLn_CMPfT75mPLbWWMHtgvr41NJj74Cg4g7LKl3Dl/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+         </script>
+         
+   </body>
+
+</html>

@@ -1,0 +1,183 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section 
+{
+    font-weight: bolder;
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+header
+{
+    font-size:larger;
+    padding:10px 20px 10px 20px;
+    font-weight: bold;
+    background-color:lightgrey;
+    text-align:center;
+}
+.header
+{
+    background-color: white;
+    padding:10px 100px 10px 100px;
+}
+.team1 
+{
+  text-decoration: none;
+}
+.team1:hover
+{
+  color:limegreen;
+}
+.home
+{
+  text-decoration: none;
+  background-color:white;
+  float:left;
+}
+ a:hover{
+    color:crimson;
+}
+</style>
+</head>
+<body>
+   <header><fieldset><a href="index.html" class="home">Home</a><h1><div class="header">About Us</div></h1></fieldset> </header> 
+<div class="about-section">
+  
+  <p>In today’s modern era several pets are either let loose or being thieft. The website aims to provide user an interface to search for their lost pets by providing essential information about the last known location and specification of their pets.User will be able to give information of those pets that have been lost if they found any and also our website will also provide the locations and information about the animal care taking centres which will be helpful if someone find any pet injured so that immediate aid can be provided any further process of enquiry will be followed.</p><br>
+  <p>	If your pet goes missing, post its picture on the community. On the other hand, if you come across a lost dog, you post its image on the website page.Site users can get a customized step-by-step plan of action. You can also get a personalized street flyer that you can download and print.
+    The community helps in tracking down all lost pets. They browse through the photo matches and send any leads when they see a possible match. The community of pet lovers can also help you hang flyers and sharing them among their network of friends.
+    The website can also send free Dog Amber Alerts to your family members and friends.  
+    	The site ensures your privacy by using a different number on the flyers.
+    </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="image/mridul.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Mridul Tiwari</h2>
+        <p class="title">Developer</p>
+        <p>Front end developer,excellent communication skills and a team player.</p>
+        <p>Good at managing events. </p>
+        <p>Interests include travelling and watching web series.</p>
+        <a href="mridultiwari150@gmail.com" class="team1">mridutiwari150@gmail.com</a></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/priyanshu.png" alt="Mike" style="width:100%" height="47%">
+      <div class="container">
+        <h2>Priyanshu Tripathi</h2>
+        <p class="title">Front-end Developer</p>
+        <p>Front end developer,excellent communication skills and a team player.</p>
+        <p>Good at managing events. </p>
+        <p>Interests include travelling and watching web series.</p>
+        <a href="tripathipriyanshu081@gmail.com" class="team1">tripathipriyanshu081@gmail.com</a>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="image/amar.jpeg" alt="John" style="width:100%" height="50%">
+      <div class="container">
+        <h2>Amar Shakya</h2>
+        <p class="title">Front-end Developer</p>
+        <p>Front end developer,excellent communication skills and a team player.</p>
+        <p>Good at managing events. </p>
+        <p>Interest include playing cricket.</p>
+        <a href="amarshakya555@gmail.com" class="team1">amarshakya555@gmail.com</a>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+   
+  <div class="column">
+    <div class="card">
+      <img src="image/deepak.jpg" alt="John" style="width:100%" height="50%">
+      <div class="container">
+        <h2>Deepak Bathija</h2>
+                    <p class="title">Full Stack Developer</p>
+                    <p>Founder of Covid case app.CGC, love to learn new technologies.</p>
+                    <p>Published Eight Patents</p>
+                    <p>Interests including playing football, swimming.</p>
+        <a href="deepak.db.bathija@gmail.com" class="team1">deepak.db.bathija@gmail.com</a>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
